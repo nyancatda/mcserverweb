@@ -4,7 +4,7 @@ include 'controller/config.php';
 ?>
 
 <!doctype html>
-<html lang="zh">
+<html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -14,28 +14,36 @@ include 'controller/config.php';
     
     <title>欢迎加入<?php echo $servername;?>服务器</title>
     
-    <link href="css/bootstrap.css" rel="stylesheet" />
-	  <link href="css/coming-sssoon.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/coming-sssoon.css" rel="stylesheet" />
+  <link href="css/font-awesome.css" rel="stylesheet" />
   
 </head>
 
 <body>
 <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">  
   <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
              <li>
                 <a href="<?php echo $qqgrouplink;?>"> 
-                    <i class="fa fa-twitter"></i>
+                    <i class="glyphicon glyphicon-flag"></i>
                     QQ群
                 </a>
             </li>
              <li>
                 <a href="mailto:<?php echo $email;?>"> 
-                    <i class="fa fa-envelope-o"></i>
+                    <i class="glyphicon glyphicon-envelope"></i>
                     Email
                 </a>
             </li>
@@ -58,7 +66,14 @@ include 'controller/config.php';
         <div class="content">
             <h4 class="motto"><?php echo $introduced;?></h4>
             <div class="subscribe">
-                <h5 class="info-text">
+            <div class="row">
+                        <form class="info-text" action="minecraft://?addExternalServer=<?php echo $servername;?>|<?php echo $serverip;?>:<?php echo $serverport;?>">
+                          <div style="margin-left: 130px;margin-right: 130px;">
+                          <button type="submit" class="btn btn-lg btn-block btn-danger btn-fill">立即加入</button>
+                          </div>
+                        </form>
+                </div>
+            <h5 class="info-text">
                     服务器の信息
                 </h5>
                     <div class="col-md-4 col-md-offset-4">
@@ -75,8 +90,6 @@ include 'controller/config.php';
                     </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
     </div>
  </div>
  </body>

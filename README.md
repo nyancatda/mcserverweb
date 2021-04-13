@@ -3,6 +3,11 @@
 
 通过编辑config.json即可搭建一个我的世界服务器官网
 
+## 快速使用
+* 安装[Visual C++ 2017](https://aka.ms/vs/16/release/vc_redist.x64.exe)
+* 下载[一键启动版](https://github.com/nyancatda/mcserverweb/releases)
+* 配置文件和图片文件夹会在第一次运行时生成，serverport参数表示您希望服务器启动在哪个端口，其他参数见 [config.json参数说明](https://github.com/nyancatda/mcserverweb#configjson%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+
 ## config.json参数说明
 |参数|说明|备注|
 |----|----|----|

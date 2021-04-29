@@ -7,9 +7,7 @@ $serverip = $jsoncf->ip;
 $serverport = $jsoncf->port;
 $introduced = $jsoncf->introduced;
 $qqgrouplink = $jsoncf->qqgrouplink;
-$qqadmin = $jsoncf->qqadmin;
 $email = $jsoncf->email;
-$status = "不在线";
 
 try {
     ini_set('default_socket_timeout', 1);

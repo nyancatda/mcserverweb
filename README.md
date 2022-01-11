@@ -1,9 +1,9 @@
+此项目已不再更新，新版本请移步[mcserverweb-golang](https://github.com/nyancatda/mcserverweb-golang)
+
 # mcserverweb
 我的世界基岩版服务器官网模板
 
 通过编辑config.json即可搭建一个我的世界服务器官网
-
-Golang版本请前往[mcserverweb-golang](https://github.com/nyancatda/mcserverweb-golang)，使用更简单
 
 ## 快速使用
 * 安装[Visual C++ 2017](https://aka.ms/vs/16/release/vc_redist.x64.exe)
